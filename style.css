@@ -1,37 +1,43 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
 }
-body{
-    background-image: url(../sea-3652697_1920.jpg);
+
+body {
+    background-image: url(./img/sea-3652697_1920.jpg);
     background-size: cover;
 }
-.container{
-    width: 80%;
-    height: 500px;
-    margin: auto;
-    background-color: rgba(0,0, 0, 0.7);
-    margin-top: 200px;
 
+.container {
+    position: relative;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
 }
-.container .text{
+
+.container .text {
     width: 35%;
     color: white;
-    margin-top: 100px;
+    margin-top:50px;
     padding-left: 5%;
     padding-right: 10%;
     float: left;
 }
-.text h1{
-    margin-bottom: 50px;
-    font-size: 60px;
+
+.text h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
     font-weight: 300;
 }
-.text p{
+
+.text p {
     line-height: 30px;
 }
-.text button{
+
+.text button {
     color: white;
     background-color: transparent;
     margin-top: 20px;
@@ -41,92 +47,108 @@ body{
     cursor: pointer;
 }
 
-.signin{
-    width:700px;
-    height: 700px;
-    background-color: #fff;
+.signin {
     position: absolute;
-    top: 100px;
-    left: 12%;
+    width: 400px;
+  padding-bottom: 10px;
+    background-color: #fff;
     transition: all 1s;
     display: none;
     animation-name: anime;
     animation-duration: 1s;
     animation-iteration-count: 1;
+  
+    top: 30px;
+    left: 12%;
 }
-@keyframes anime{
-    0%{
+
+@keyframes anime {
+    0% {
         left: 12%;
     }
-    100%{
+    50%{
+        left: 60%;
+    }
+    100% {
         left: 50%;
     }
 }
 
-.show1{
+.show1 {
     display: block !important;
     top: 100px;
     left: 50%;
 }
-.signup{
-    width:700px;
-    height: 700px;
+
+.signup {
+    position: absolute;
+    width: 400px;
+    padding-bottom: 10px;
     background-color: #fff;
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 50%;
     display: none;
     animation-name: anime2;
     animation-duration: 1s;
     animation-iteration-count: 1;
 }
-@keyframes anime2{
-    0%{
+
+@keyframes anime2 {
+    0% {
         left: 50%;
     }
-    100%{
+    50%{
+        right: 60%;
+    }
+    100% {
         left: 12%;
     }
 }
-.show2{
+
+.show2 {
     display: block !important;
     top: 100px;
     left: 12%;
 }
-.form1{
-    padding-top: 50px;
+
+.form1 {
+    padding-top: 10px;
     padding-left: 50px;
 }
-.form2{
-    padding-top: 150px;
+
+.form2 {
+    padding-top: 10px;
     padding-left: 50px;
 }
-form input{
+
+form input {
     display: block;
     width: 80%;
     border: none;
     border-bottom: 1px solid gray;
     padding: 20px 10px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
-input::placeholder{
+
+input::placeholder {
     font-size: 20px;
 }
-form label{
+
+form label {
     font-size: 50px;
     font-weight: bold;
     color: rgb(247, 99, 0);
-   
 }
-form button{
+
+form button {
     width: 40%;
     padding: 15px 30px;
     background-color: rgb(247, 99, 0);
     color: white;
     border: none;
     margin-right: 50px;
-    float:right;
+    float: right;
     font-size: 20px;
-   
 }
